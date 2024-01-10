@@ -1,0 +1,44 @@
+https://cdn.pannellum.org/2.5/pannellum.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+  <title>Imagem 360</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #panorama {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <!-- Panorama 360 -->
+  <div id="panorama"></div>
+
+  <!-- Inclua os arquivos da biblioteca Pannellum -->
+  <script src="path/to/pannellum.js"></script>
+
+  <script>
+    // Configuração do panorama
+    const panorama = pannellum.viewer('panorama', {
+      type: 'equirectangular',
+      panorama: '.360/one-zen-MN6_yENUQOI-unsplash.jpg',
+      autoLoad: true,
+      mouseZoom: false, // Desabilita o zoom com o mouse
+    });
+  </script>
+</body>
+</html>

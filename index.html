@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="index.js"> 
+   
+    <title>Offroad</title>
+</head>
+<body>
+
+    <!--INICIO DE TOPNAV-->
+    <button class="menu">&#9776;</button>
+    <div class="topnav">
+        <nav>
+          
+            <a class="Home" href="#">Home</a>
+            <div class="responsa">
+            <a href="#">Trilha</a>
+            <a href="aluguer.html">Alugar</a>
+            
+            <input type="text" placeholder="Digite a Ilha que desejas Aventurar" class="procurar">
+            <button type="submit"><img alt="encontrar" src="./Icon/pngegg.png" style="height: 30px;width: 30px;"></button>
+            
+            <a href="#demo-modal" class="login" style="float: right; color: white;">Login</a>
+            </div>
+        </nav>
+    </div>
+    <!--FIM DE TOPNAV-->
+
+    <!--INICIO DE CARROSEL-->
+
+    <div class="content">
+      <div class="slides">
+          <input class="radio" type="radio" name="slide" id="slide1">
+          <input class="radio" type="radio" name="slide" id="slide2">
+          <input class="radio" type="radio" name="slide" id="slide3">
+          <input class="radio" type="radio" name="slide" id="slide4">
+
+          <div class="slide s1">
+            
+
+              <img src="./img/Sinta (2).jpg" alt="paisagem1">
+              <div class="forma">
+              <p style="position: absolute; 
+                        top: 60%;
+                        color: aliceblue;
+                        backdrop-filter: blur(2px);
+                        width: 60%;
+                        font-size: 30px;
+                        
+                        margin-left: 5%;
+                        text-shadow:  0 5px 10px rgba(8, 8, 8, 0.79);
+
+                        ">Em Cabo Verde, um arquipélago de beleza única no oceano Atlântico, as trilhas oferecem uma experiência de aventura incomparável, revelando paisagens exuberantes e uma rica diversidade cultural. Se você está ansioso para explorar o lado selvagem dessas ilhas vulcânicas, há diversas trilhas que garantem uma jornada memorável.</p>
+          </div>
+        </div>
+          <div class="slide">
+              <img src="./img/Bubista.png" alt="paisagem2">
+          </div>
+          <div class="slide">
+              <img src="./img/Serra.jpg" alt="paisagem3">
+          </div>
+          <div class="slide">
+            <img src="./img/slide3 - Cópia.jpg" alt="paisagem4">
+        </div>
+      
+      </div>
+
+      <div class="navigation">
+          <label class="bar" for="slide1"></label>
+          <label class="bar" for="slide2"></label>
+          <label class="bar" for="slide3"></label>
+          <label class="bar" for="slide4"></label>
+      </div>
+  </div>
+
+    <!--FIM DE CARROSEL-->
+
+
+    
+    <!--INICIO DE MODAL DE LOGIN-->
+
+    <div id="demo-modal" class="modal">
+        <div class="modal_content">
+            <h4>login</h4>
+            <form action="#" method="GET">
+            <input type="name" placeholder="Utilizador" class="login-input" required="required"></br>
+            <input type="password" placeholder="Password" class="login-input" required="required"></br>
+            <a href="#">Criar Conta</a></br>
+            <input type="submit" value="Login" class="submit">
+        
+            <a href="#" class="modal_clouse">&times;</a>
+        </div>
+    </form>
+    </div>
+
+<!-- FIM DE MODAL LOGIN-->
+
+    <h1>Offroad CV</h1>
+
+      <div class="conteudo">
+
+      <article class="artigo1">
+        <img alt="carro" src="img/4X4tour-1024x683 (1).jpeg">
+        <p>
+          Em Cabo Verde, um arquipélago de beleza única no oceano Atlântico, as trilhas oferecem uma experiência de aventura incomparável, revelando paisagens exuberantes e uma rica diversidade cultural. Se você está ansioso para explorar o lado selvagem dessas ilhas vulcânicas, há diversas trilhas que garantem uma jornada memorável.</p>
+      </article>
+
+<!--INICIO DE CARDS-->
+
+      <h2>Melhores Trilhas para Aventurar- se</h2>
+      <div class="container2">
+          <article class="cards1">
+              <img alt="Trilha1" src="img/Trilha1.jpg" height="75%">
+              <div class="cards-box">
+                <h3>Santo Antao</h3>
+                <p>cbkcbcen ejcn cnlcn lecneklc elcnlenc cnelll</p>
+
+              </div>
+              <a href="#cards-modal">Info</a>
+          </article>
+
+          <article class="cards2">
+              <img alt="Trilha2" src="img/Trilha2.jpg" height="75%">
+              <div class="cards-box">
+                <h3>Paul</h3>
+                <p>cbkcbcen ejcn cnlcn lecneklc elcnlenc cnelll</p>
+                
+              </div>
+              <a href="#">Info</a>
+          </article>
+
+          <article class="cards3">
+              <img alt="Trilha3" src="img/Trilha3.jpg" height="75%">
+              <div class="cards-box">
+                <h3>Deserto</h3>
+                <p>cbkcbcen ejcn cnlcn lecneklc elcnlenc cnelll</p>
+                
+              </div>
+              <a href="#">Info</a>
+          </article>
+
+
+      </div>
+
+      <!--FIM DE CARDS-->
+
+      <!--INICIO DE MODAL DE CARDS-->
+      <div id="cards-modal" class="modal-cards">
+            <div class="modal_container">
+                <img alt="Santo Antao" src="img/WEB_Santo-Antao-03.jpg">
+                <div class="modal_text">
+                    <p>Em Cabo Verde, um arquipélago de beleza única no oceano Atlântico, as trilhas oferecem uma experiência de aventura incomparável, revelando paisagens exuberantes e uma rica diversidade cultural. Se você está ansioso para explorar o lado selvagem dessas ilhas vulcânicas, há diversas trilhas que garantem uma jornada memorável.</p>
+                </div>
+                <a href="#" class="modal_clouse">&times;</a>
+            </div>
+      </div>
+      <!--FIM DE MODAL DE CARDS-->
+
+      
+
+
+    </div>
+    <!--    <footer>
+        <div class="footer-img">
+        <img alt="jeep" src="img/JeepWrangler.jpg" width="250px" height="200px" style="border-radius: 50%;">
+        <p>Trilhas Offroads CV</p>
+        </div>
+        <div class="about">
+            <ul>
+                <li>Trilhas Cabo Verde</li>
+                <li>Cabo Verde</li>
+                <li>Desenvolvido por Helder Santos &copy;</li>
+            </ul>
+        </div>
+    </footer>
+    -->
+
+</body>
+</html>
