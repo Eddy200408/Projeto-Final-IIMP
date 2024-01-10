@@ -527,7 +527,7 @@ h3{
     grid-template-columns: 45% 50%;
     border-radius: 10px;
 }
-.modal_container img{
+.maps{
     grid-area: Img;
     width: 100%;
     height: 100%;
@@ -539,6 +539,11 @@ h3{
     margin-top: 20%;
 }
 /* FIM DE MODAL DE CARDS*/
+
+.maps{
+    width: 50%;
+    height: 50%;
+}
 
 @media screen and (max-width: 700px){
     /*MENU*/
