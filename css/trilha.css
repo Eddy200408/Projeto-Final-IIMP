@@ -155,10 +155,27 @@ button:hover{
     width: 100%;
 }
 
+
 .cards2{
     width: 80%;
+    height: 650px;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10%;
+    box-shadow: 0 5px 10px rgba(8, 8, 8, 0.79);
+}
+.cards2 a{
+    background-color: #ffc107;
+    padding: 15px 25px;
+    text-decoration: none;
+   font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-shadow:  0 5px 10px rgba(8, 8, 8, 0.24);
+}
+.cards2 a:hover{
+    transition: 0.5s;
+    font-size: 17px;
     box-shadow: 0 5px 10px rgba(8, 8, 8, 0.79);
 }
