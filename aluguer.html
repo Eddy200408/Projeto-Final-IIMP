@@ -5,42 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/alugar.css">
     <link rel="icon" type="image/x-icon" href="Icon/pri.png">
+    <script src="https://kit.fontawesome.com/15e164fb66.js" crossorigin="anonymous"></script>
     
     <title>Alugar</title>
 </head>
 <body>
   <div class="topnav">
     <nav>
-        <img class="logo" alt="logo" src="Icon/logo.png" width="15%" height="180px">
-        <a class="Home" href="index.html">Home</a>
-        <div class="responsa">
-        <a href="trilha.html">Trilha</a>
-        <a href="aluguer.html">Alugar</a>
+        <img class="logo" alt="logo" src="img/trilha/logo.png" width="15%" height="180px">
         
-                   
+        <div class="responsa">
+          <a href="help.html">ajuda</a>  
+          <a href="download.html">Download</a>  
+          <a href="trilha.html"><i class="fa-solid fa-road"></i> Trilha</a>
+          <a href="aluguer.html"><i class="fa-solid fa-car"></i> Alugar</a>
+          <a class="Home" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
         </div>
     </nav>
-    <input type="text" placeholder="Digite a Ilha que desejas Aventurar" class="procurar">
+    <input type="text" placeholder="Digite a Viatura que Procuras" class="procurar">
         <button type="submit"><img alt="encontrar" src="./Icon/pngegg.png" style="height: 30px;width: 30px;"></button>
 </div>
     
     <div class="conteudo">
+
+<!--CARDS CARROS-->
+
     <h1>Viaturas Offroad Disponiveis para aluguer</h1>
     <div class="container1">
         <article class="cards1">
-            <img alt="Trilha1" src="img/JeepWrangler.jpg" height="75%">
+            <img alt="Trilha1" src="img/Carros/hilux.png" height="75%">
             <div class="cards-box">
-              <h3>Jeep Wrangler</h3>
-              <p>cbkcbcen ejcn cnlcn lecneklc elcnlenc cnelll</p>
+              <h3>Toyota Hilux</h3>
+              
+              <p class="preco">7500$00- dia</p>
+              <a href="#cards1-modal" class="info">Info</a>
 
             </div>
         </article>
 
         <article class="cards2">
-            <img alt="Trilha2" src="img/LandRouver.jpg" height="75%">
+            <img alt="Trilha2" src="img/Carros/ford-ranger-raptor-off-road-suv-off-roading-2023-5k-8k-7680x4320-7508.jpg" height="75%">
             <div class="cards-box">
-              <h3>Land Rouver Defender</h3>
-              <p>cbkcbcen ejcn cnlcn lecneklc elcnlenc cnelll</p>
+              <h3>Ford Ranger</h3>
+              <p class="preco">7500$00- dia</p>
+              <a href="#cards2-modal" class="info">Info</a>
               
             </div>
         </article>
@@ -49,7 +57,8 @@
             <img alt="Trilha3" src="img/ToyotaTacoma.jpg" height="75%">
             <div class="cards-box">
               <h3>Toyota Tacoma</h3>
-              <p>cbkcbcen ejcn cnlcn lecneklc elcnlenc cnelll</p>
+              <p class="preco">6000$00- dia</p>
+              <a href="#" class="info">Info</a>
               
             </div>
 
@@ -57,7 +66,9 @@
 
 
     </div>
+<!--FIM DE CARDS CARROS-->
 
+<!--CARDS BIKES-->
 
     <h2>Bikes Disponiveis para aluguer</h2>
     <div class="container2">
@@ -65,7 +76,8 @@
             <img alt="Trilha1" src="img/Donhill.jpg" height="75%">
             <div class="cards-box">
               <h3>Jeep Wrangler</h3>
-              <p>cbkcbcen ejcn cnlcn lecneklc elcnlenc cnelll</p>
+              <p class="preco">6000$00- dia</p>
+              <a href="#" class="info">Info</a>
 
             </div>
         </article>
@@ -74,7 +86,8 @@
             <img alt="Trilha2" src="img/Eletrico.jpg">
             <div class="cards-box">
               <h3>Land Rouver Defender</h3>
-              <p>cbkcbcen ejcn cnlcn lecneklc elcnlenc cnelll</p>
+              <p class="preco">6000$00- dia</p>
+              <a href="#" class="info">Info</a>
               
             </div>
         </article>
@@ -83,7 +96,8 @@
             <img alt="Trilha3" src="img/Montanha.jpg" height="75%">
             <div class="cards-box">
               <h3>Toyota Tacoma</h3>
-              <p>cbkcbcen ejcn cnlcn lecneklc elcnlenc cnelll</p>
+              <p class="preco">6000$00- dia</p>
+              <a href="#" class="info">Info</a>
               
             </div>
 
@@ -91,8 +105,80 @@
 
 
     </div>
+    <!--FIM DE CARDS BIKES-->
 
+
+    <!--INICIO MODAL CARROS-->
+    <div id="cards1-modal" class="modal-cards">
+      <div class="modal_container">
+          <div class="img-car">
+              <img alt="carro" src="img/Carros/Hilux-GR-S-1-scaled.jpg" height="49%" width="80%"></br>
+              <img alt="carro" src="img/Carros/new-hilux-gr-sport.jpg" height="49%" width="80%">
+              
+            </div>
+          <div class="modal_text">
+              <p><strong>Expecificacao Tecnica</strong></p>
+              <p>Cilindrada: 3000 cc</p>
+              <p>Velociadade Maxima: 190km/h</p>
+              <p>Km: 25000km</p>
+              <a href="#" class="reservar">Reservar</a>
+          </div>
+          <a href="#" class="modal_clouse">&times;</a>
+      </div>
 </div>
+
+<div id="cards2-modal" class="modal-cards">
+  <div class="modal_container">
+      <div class="img-car">
+          <img alt="carro" src="img/Carros/ford-ranger-raptor-off-road-suv-off-roading-2023-5k-8k-7680x4320-7508.jpg" height="49%" width="80%"></br>
+          <img alt="carro" src="img/Carros/new-hilux-gr-sport.jpg" height="49%" width="80%">
+          
+        </div>
+      <div class="modal_text">
+          <p><strong>Expecificacao Tecnica</strong></p>
+          <p>Cilindrada: 3500 cc</p>
+          <p>Velociadade Maxima: 190km/h</p>
+          <p>Km: 35000km</p>
+          <a href="#" class="reservar">Reservar</a>
+      </div>
+      <a href="#" class="modal_clouse">&times;</a>
+  </div>
+</div>
+    <!--FIM DE MODAL CARROS-->
+    <!--INICIOMODAL BIKES-->
+    <!--FIM DE MODAL BIKES-->
+</div>
+
+<footer>
+  <div class="container-footer">
+      <img src="Icon/pri.png" alt="logo">
+      <div class="text-footer">
+          <h4>Sobre Nos</h4>
+          <p>Offroad CV e uma plataforma de trilhas de cabo verde</p>
+          <h4>Follow Us</h4></br>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <div class="text2-footer">
+          <h4>OffroadCV Help</h4>
+          <p>Help Center</p>
+          <p>OffroadCV Forums</p>
+          <p>Our Site</p>
+      </div>
+      <div class="text3-footer">
+          <h4>Colaboradores</h4>
+          <p>Administrador</p>
+          <p>Empresa</p>
+          <p>Afiliado</p>
+      </div>
+
+
+
+      </div>
+  
+
+</footer>
 
 
 </body>

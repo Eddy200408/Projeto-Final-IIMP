@@ -3,11 +3,7 @@
     padding: 0;
 }
 body{
-    background-image: url(../img/slide3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    background-attachment: fixed;
+   
     font-family: Arial, Helvetica, sans-serif;
    
 }
@@ -30,13 +26,14 @@ body{
     display: inline;
     padding: 20px 30px;
     text-decoration: none;
-    color: white;
+    color: #f2852a;
     font-weight: bold;
     text-transform: uppercase;
     float: left;
     margin-top: 0;
-    text-shadow:  0 5px 10px rgba(8, 8, 8, 0.79);
+    
     float: right;
+    font-size: 15px;
 }
 .topnav a:hover,
 .menu:hover{
@@ -51,18 +48,18 @@ input{
     
     background-color: #00000000;
     color: #f2f2f2;
-    border: 2px white;
+    border: 2px black;
     border-bottom: solid;
     color: white;
     outline: 0;
 
 }
 input::placeholder{
-    color:white;
-    text-shadow:  0 5px 10px rgba(8, 8, 8, 0.24);
+    color:rgb(64, 64, 64);
+    
   }
   input :hover{
-      border: 2px white;
+      border: 2px black;
       font-size: 20px;
   }
   button{
@@ -71,7 +68,7 @@ input::placeholder{
       border-radius: 50px;
       right: 200px;
       top: 230px;
-      border: white;
+      border: black;
   }
   .procurar{
       margin-top: 50px;
@@ -81,7 +78,7 @@ input::placeholder{
       position: absolute;
       top: 180px;
       left: 10%;
-      color: white;
+      color: black;
       font-size: 18px;
       backdrop-filter: blur(1px);
       margin-bottom: 20px;
@@ -100,7 +97,7 @@ input::placeholder{
     backdrop-filter: blur(3px);
 }
 h1{
-    color: white;
+    color: black;
     text-align: center;
     margin-top: 20%;
     animation-duration: 2s;
@@ -118,11 +115,12 @@ h1{
 }
 
 h2{
-    color: white;
+    color:#535050;
     text-align: center;
     margin-top: 40px;
     animation-duration: 3s;
     animation-name: h2;
+
 }
 @keyframes h2{
     from{
@@ -150,39 +148,54 @@ h3{
   grid-template-columns: 28% 28% 28%;
 }
 .cards1{
-    background-color: #f2f2f2;
+    background-color: white;
     grid-area: card1; 
     padding-bottom: 40px;
     border-radius: 15px;
+    border: solid 2px rgb(166, 166, 166) ;
+}
+.cards1:hover{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
-  
 }
 .cards1 img{
     width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
+
 .cards2{
-    background-color: #f2f2f2;
+    background-color: white;
     grid-area: card2; 
     padding-bottom: 40px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
+    border: solid 2px rgb(166, 166, 166) ;
   
+}
+.cards2:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
 }
 .cards2 img{
     width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .cards3{
-    background-color: #f2f2f2;
+    background-color: white;
     grid-area: card3; 
     padding-bottom: 40px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
+    border: solid 2px rgb(166, 166, 166) ;
   
+}
+.cards3:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
 }
 .cards3 img{
     width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .cards-box{
@@ -192,52 +205,205 @@ h3{
 
 
 .container2{
- 
-    margin-top: 5%;
+    border-top: solid #403f3f;
+    margin-top: 2%;
     display: grid;
     grid-gap: 8%;
     grid-template-areas: "card1 card2 card3";
     grid-template-columns: 28% 28% 28%;
+    padding-top: 5%;
   }
-  .cards1{
-      background-color: #f2f2f2;
-      grid-area: card1; 
-      padding-bottom: 40px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
-    
-  }
+ .cards1{
+    background-color: white;
+    grid-area: card1; 
+    padding-bottom: 40px;
+    border-radius: 15px;
+    border: solid 2px rgb(166, 166, 166) ;
+  
+}
+.cards1:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
+}
   .cards1 img{
       width: 100%;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
   }
   
   .cards2{
-      background-color: #f2f2f2;
+      background-color: white;
       grid-area: card2; 
       padding-bottom: 40px;
       border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
+      border: solid 2px rgb(166, 166, 166) ;
     
   }
+  .cards2:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
+}
   .cards2 img{
       width: 100%;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
   }
   
   .cards3{
-      background-color: #f2f2f2;
+      background-color: white;
       grid-area: card3; 
       padding-bottom: 40px;
       border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
+      border: solid 2px rgb(166, 166, 166) ;
     
   }
+  .cards3:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
+}
   .cards3 img{
       width: 100%;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
   }
   
   .cards-box{
       padding: 10px 20px;
   }
+
+   .preco{
+    float: left;
+}
+    .info{
+    background-color: #ffc107;
+    padding: 10px 20px;
+    float: right;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+}
+  .info:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
+  }
+
+
+/* INICIO DE MODAL DE CARDS*/
+
+.modal-cards{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+.modal-cards:target{
   
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.737);
+    backdrop-filter: blur(6px);
+    
+}
+.modal_container{
+    position: relative;
+    width: 40%;
+    max-width: 90%;
+    background: #fff;
+    display: grid;
+    grid-gap: 5%;
+    grid-template-areas: "Img Text";
+    border-radius: 10px;
+    height: 40%;
+
+}
+.img-car{
+    grid-area: Img;
+    width: 100%;
+    height: 100%;
+}
+.modal_text{
+   
+    grid-area: Text;
+    width: 90%;
+    margin-top: 40%;
+    height: 100%;
+}
+.modal_text p{
+    margin-bottom: 10px;
+}
+.reservar{
+    background-color: #ffc107;
+    padding: 10px 20px;
+    float: right;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-top: 50%;
+}
+  .reservar:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
+  }
+.modal_clouse{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black; 
+    text-decoration: none;
+}
+.modal_footer-btn-clouse{
+    width: 150px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #cfcca8;
+    color: black;
+    border-radius: 3px;
+}
+/* FIM DE MODAL DE CARDS*/
+
   
+footer{
+    margin-top: 10%;
+    background-color: #232323;
+   height: 200px;
+    color: #bbbbbb;
+    padding: 7% 10%;
+    
+}
+.container-footer{
+    display: grid;
+    grid-template-areas: "Fimg Ftext1 Ftext2 Ftext3";
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 8%;
+}
+.container-footer h4{
+    color: white;
+    margin-bottom: 7%;
+}
+.container-footer p{
+    margin-bottom: 7%;
+}
+.container-footer img{
+    grid-area: Fimg;
+    width: 100%;
+}
+.container-footer i{
+    font-size: 35px;
+    margin-right: 5%;
+}
+.text-footer{
+    grid-area: Ftext1;
+}
+.text2-footer{
+    grid-area: Ftext2;
+}
+.text3-footer{
+    grid-area: Ftext3;
+}
+
+
   

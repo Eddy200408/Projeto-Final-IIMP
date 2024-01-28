@@ -35,7 +35,7 @@ body{
     margin-top: 0;
     text-shadow:  0 5px 10px rgba(8, 8, 8, 0.79);
     float: right;
-    
+    font-size: 15px;
 }
 .menu{
     border: none;
@@ -70,20 +70,7 @@ input{
 input:hover{
     border: 2px white;
 }
-button{
-    position: absolute;
-    background-color: #FFC107;
-    border-radius: 50px;
-    right: 30.6%;
-    top: 460%;
-    border: white;
-    padding: 6px 10px;
-}
-button:hover{
-    transition: .5s;
-    font-size: 30px;
-    background-color: greenyellow;
-}
+
 .procurar{
     margin-top: 25%;
     height: 50px;
@@ -105,20 +92,20 @@ button:hover{
     top: 0;
 }
 .cards1{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 45%;
-    box-shadow: 0 5px 10px rgba(8, 8, 8, 0.79);
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 42%;
+    border: solid 2px rgb(166, 166, 166) ; 
     margin-bottom: 10%;
-    height: 650px;
+    height: 680px;
     padding-bottom: 1%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
 }
-
-.cards-links{
-   
-    padding: 10px 25px;
-    float: right;
+.cards1:hover{
+    box-shadow: 0 5px 10px rgba(8, 8, 8, 0.79);
 }
 .cards1 a{
     background-color: #ffc107;
@@ -157,11 +144,18 @@ button:hover{
 
 
 .cards2{
-    width: 80%;
-    height: 650px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+    border: solid 2px rgb(166, 166, 166);
+    margin-bottom: 10%;
+    height: 680px;
+    padding-bottom: 1%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.cards2:hover{
     box-shadow: 0 5px 10px rgba(8, 8, 8, 0.79);
 }
 .cards2 a{
@@ -179,3 +173,77 @@ button:hover{
     font-size: 17px;
     box-shadow: 0 5px 10px rgba(8, 8, 8, 0.79);
 }
+
+.text-descricao{
+
+    display: grid;
+    grid-gap: 5%;
+    grid-template-areas: "descricao1 descricao2 link";
+    grid-template-columns: 180% 70% 20%;
+    float: left;
+    margin-top: 3%;
+}
+.descricao1{
+    grid-area: descricao1;
+}
+.descricao1 h5{
+    margin-bottom: 1px;
+}
+.descricao2{
+    grid-area: descricao2;
+}
+.cards-links{
+    padding: 10px 25px;
+    float: right;
+    grid-area: link;
+    margin-top: 5%;
+    float: right;
+}
+.cards-links2{
+    padding: 10px 25px;
+    float: right;
+    grid-area: link;
+    margin-top: 5%;
+    float: right;
+}
+
+footer{
+    margin-top: 10%;
+    background-color: #232323;
+   height: 200px;
+    color: #bbbbbb;
+    padding: 7% 10%;
+    
+}
+.container-footer{
+    display: grid;
+    grid-template-areas: "Fimg Ftext1 Ftext2 Ftext3";
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 8%;
+}
+.container-footer h4{
+    color: white;
+    margin-bottom: 7%;
+}
+.container-footer p{
+    margin-bottom: 7%;
+}
+.container-footer img{
+    grid-area: Fimg;
+    width: 100%;
+}
+.container-footer i{
+    font-size: 35px;
+    margin-right: 5%;
+}
+.text-footer{
+    grid-area: Ftext1;
+}
+.text2-footer{
+    grid-area: Ftext2;
+}
+.text3-footer{
+    grid-area: Ftext3;
+}
+
+

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   /* background-image: url(../img/slide1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;*/
+    font-family: Arial, Helvetica, sans-serif;
+    backdrop-filter: blur(4px);
+    
+   
+}
+.topnav{
+  
+    padding: 20px;
+    width: 97,5%;
+    height: 50px;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+    z-index: 10;
+    backdrop-filter: blur(2px);
+}
+.responsa{
+    overflow: hidden;
+    transition: all .5s;
+}
+.topnav a{
+    display: inline;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #f2852a;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 0;
+    
+    float: right;
+    font-size: 15px;
+}
+.topnav a:hover,
+.menu:hover{
+    transition-duration: 0.5s;
+    color: #ffc107;
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 17px;
+
+}
+.logo{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+
+.conteudo{
+    height: 400px;
+    margin-bottom: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.conteudo img{
+    float: right;
+    width: 45%;
+    margin-top: 7%;
+}
+.conteudo-text{
+    margin-top: 15%;
+    float: left;
+    
+    font-size: 20px;
+    width: 50%;
+    color: #585858;
+}
+
+h1{
+    margin-bottom: 10%;
+}
+
+button{
+
+    padding: 20px 60px;
+    background-color: #f8ad30;
+    border-radius: 25px;
+    border: none;
+    margin-top: 25%;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+
+footer{
+   
+    background-color: #232323;
+   height: 200px;
+    color: #bbbbbb;
+    padding: 7% 10%;
+    
+}
+.container-footer{
+    display: grid;
+    grid-template-areas: "Fimg Ftext1 Ftext2 Ftext3";
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 8%;
+}
+.container-footer h4{
+    color: white;
+    margin-bottom: 7%;
+}
+.container-footer p{
+    margin-bottom: 7%;
+}
+.container-footer img{
+    grid-area: Fimg;
+    width: 100%;
+}
+.container-footer i{
+    font-size: 35px;
+    margin-right: 5%;
+}
+.text-footer{
+    grid-area: Ftext1;
+}
+.text2-footer{
+    grid-area: Ftext2;
+}
+.text3-footer{
+    grid-area: Ftext3;
+}
