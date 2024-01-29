@@ -200,7 +200,7 @@ button{
 /*INICIO CARROSEL*/
 
 .content{
-    height: 34%;
+    height: 32%;
     width: 100%;
     overflow: hidden;
     margin-left: 50%;
@@ -291,13 +291,13 @@ button{
 
 h1{
     text-align: center;
-    margin-top: 46%;
+    margin-top: 50%;
     animation-duration: 2s;
     animation-name: sel;
     position: absolute;
-    top: 6%;
-    right: 40%;
-    left: 40%;
+    top: 4%;
+    right: 35%;
+    left: 35%;
     color: #EF6C00;
     font-size: 45px;
     text-shadow: 0 5px 10px rgb(8 8 8 / 19%);
@@ -392,9 +392,9 @@ h3{
  
   margin-top: 5%;
   display: grid;
-  grid-gap: 8%;
+  grid-gap: 5%;
   grid-template-areas: "card1 card2 card3";
-  grid-template-columns: 28% 28% 28%;
+  grid-template-columns: 30% 30% 30%;
 }
 .cards1{
     background-color: white;
