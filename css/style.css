@@ -366,7 +366,7 @@ h3{
 .apresentacao-text h6{
     font-size: 25px;
     margin-bottom: 2%;
-    color: black;
+    color: #585858;
 }
 .apresentacao-text p{
     margin-bottom: 5px;
@@ -413,29 +413,17 @@ h3{
     border-top-left-radius: 15px;
 }
 .cards1 a{
-    position: absolute;
-    background-color: #ffc107;
-    padding: 20px 30px;
-    left: 7.5%;
-    border-bottom-left-radius: 15px;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #f2f2f2;
-    transition: 2s;
-    font-weight: bold;
-    text-shadow:  0 5px 10px rgba(8, 8, 8, 0.24);
-    
+    color: #585858;
 }
 .cards1 a:hover{
-    transition: 0.5s;
-    font-size: 17px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
-
+    color: #ffc107;
 }
+
 .cards1 p{
     animation-duration: 3s;
     animation-name: slidei;
+    margin-bottom: 5%;
 }
 @keyframes slidei{
     from{
@@ -466,26 +454,16 @@ h3{
     border-top-left-radius: 15px;
 }
 .cards2 a{
-    position: absolute;
-    background-color: #ffc107;
-    padding: 20px 30px;
-    left: 36%;
-    border-bottom-left-radius: 15px;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #f2f2f2;
-    text-shadow:  0 5px 10px rgba(8, 8, 8, 0.24);
+    color: #585858;
 }
 .cards2 a:hover{
-    transition: 0.5s;
-    font-size: 17px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
-
+    color: #ffc107;
 }
 .cards2 p{
     animation-duration: 3s;
     animation-name: slidei;
+    margin-bottom: 5%;
 }
 @keyframes slidei{
     from{
@@ -516,26 +494,17 @@ h3{
     border-top-left-radius: 15px;
 }
 .cards3 a{
-    position: absolute;
-    background-color: #ffc107;
-    padding: 20px 30px;
-    left: 65%;
-    border-bottom-left-radius: 15px;
+    margin-top: 5%;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #f2f2f2;
-    text-shadow:  0 5px 10px rgba(8, 8, 8, 0.24);
+    color: #585858;
 }
 .cards3 a:hover{
-    transition: 0.5s;
-    font-size: 17px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
-
+    color: #ffc107;
 }
 .cards3 p{
     animation-duration: 3s;
     animation-name: slidei;
+    margin-bottom: 5%;
 }
 @keyframes slidei{
     from{

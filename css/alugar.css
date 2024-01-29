@@ -317,7 +317,8 @@ h3{
     grid-gap: 5%;
     grid-template-areas: "Img Text";
     border-radius: 10px;
-    height: 40%;
+    height: auto;
+    grid-template-columns: 60% 35%;
 
 }
 .img-car{
@@ -326,14 +327,19 @@ h3{
     height: 100%;
 }
 .modal_text{
-   
     grid-area: Text;
     width: 90%;
-    margin-top: 40%;
+   
     height: 100%;
+    padding-bottom: 10%;
+    padding-top: 10%;
 }
 .modal_text p{
     margin-bottom: 10px;
+}
+.modal_text h2{
+    margin-bottom: 10%;
+    float: left;
 }
 .reservar{
     background-color: #ffc107;
@@ -343,7 +349,7 @@ h3{
     color: white;
     border-radius: 15px;
     font-weight: bold;
-    margin-top: 50%;
+    margin-top: 40%;
 }
   .reservar:hover{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
