@@ -150,13 +150,13 @@ h4{
 }
 
 .clouse{
-    /* float: right; */
- position: absolute;
- top: 17px;
- left: 100%;
- text-decoration: none;
- font-size: 50px;
- color: white;
+    position: absolute;
+    top: 17px;
+    left: 100%;
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    z-index: 15;
 }
 
 .botao-menu{
@@ -171,6 +171,10 @@ h4{
  cursor: pointer;
  align-self: center;
  transition: all 0.2s;
+}
+.botao-menu:target{
+    visibility: hidden;
+    opacity: 0;
 }
 
 .menu:focus ~ .topnav a{
@@ -342,7 +346,7 @@ h1{
 }
 
 h2{
-    color: black;
+    color: #585858;
     text-align: center;
     margin-top: 50px;
     animation-duration: 2s;
@@ -648,12 +652,15 @@ footer{
 }
 
 @media screen and (max-width: 700px){
+    body{
+        width: 84%;
+    }
     /*MENU*/
     .container-menu{
         width: 100%;
        
         padding-right: 20%;
-        background-color: #546E7A;
+       
         
     }
     .conteudo{
@@ -662,7 +669,7 @@ footer{
         padding-right: 10%;
         display: block;
         height: 350px;
-        margin-top: 390%;
+        margin-top: 200%;
         
     }
    
@@ -684,21 +691,30 @@ footer{
         color: white;
         flex-direction: column;
         text-align: center;
-        width: 100%;
+        width: 90%;
     }
    
     .menu-responsa{
         overflow: auto;
         margin-top: 40px;
-        
+        padding-top: 60px;
         visibility: hidden;
         opacity: 0;
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        
     }
     .menu-responsa:target{
         visibility: visible;
         opacity: 1;
-        background-color: #546E7A;
+        background-color: #0505059e;
         width: auto;
+        margin-top: 0;
+        transition: all 0.5s;
+    }
+    .login{
+        width: 40%;
     }
 
     .Home{
@@ -707,7 +723,10 @@ footer{
     .botao-menu{
         display: flex;
         flex-basis: auto;
-        text-decoration: none;  
+        text-decoration: none;
+        z-index: 20;
+        position: absolute;
+        left: 95%;
     }
     .logo{
         width: 20%;
@@ -717,17 +736,54 @@ footer{
 
     .content{
         height: 20%;
+        width: 140%;
+        position: absolute;
+        top: 7%;
     }
     .slides{
         height: 100%;
+        width: 1000%;
+    }
+    .slide{
+        width: 30%;
+    }
+    .forma{
+        display: none;
+    }
+    .navigation{
+        margin-left: 29px;
+    }
+    .bar{
+        width: 60px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.655);
     }
 
-    .apresentacao-site img{
+    h1{
+    top: 18.5%;
+    position: absolute;
+    z-index: 30;
+    left: 61%;
+    text-align: center;
+    width: 40%;
+    text-shadow: 0 5px 10px rgb(0 0 0 / 79%);
+    backdrop-filter: blur(3px);
+    }
+    .apresentacao-site{
         display: block;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    .apresentacao-site img{
+        width: 87%;
+        margin-bottom: 18%;
+        margin-top: 21%;
+
     }
     .apresentacao-text{
-        display: block;
-        
+        width: 90%;
+        text-align: center;
+        float: none;
+        margin-left: 5%;
     }
 
 
@@ -768,7 +824,7 @@ footer{
     footer{
         width: 100%;
         height: auto;
-        margin-top: 570%;
+        margin-top: 660%;
     }
     .container-footer{
         display: block;
