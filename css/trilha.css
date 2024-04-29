@@ -61,6 +61,33 @@ body{
     font-size: 17px;
 
 }
+.clouse{
+    /* float: right; */
+ position: absolute;
+ top: 17px;
+ left: 90%;
+ text-decoration: none;
+ font-size: 50px;
+ color: white;
+ z-index: 15;
+ outline: none;
+ visibility: hidden;
+}
+
+.botao-menu{
+ border: none;
+ background-color: transparent;
+ color: #585858;
+ font-size: 36px;
+ float: right;
+ margin-top: 5%;
+ display: none;
+ outline: none;
+ cursor: pointer;
+ align-self: center;
+ transition: all 0.2s;
+}
+
 input{
     text-align: center;
     color: white;
@@ -90,6 +117,33 @@ input:hover{
     position: absolute;
     width: 100%;
     top: 0;
+}
+h1{
+text-align: center;
+    margin-top: 45%;
+    animation-duration: 2s;
+    animation-name: sel;
+    position: absolute;
+    top: 0%;
+    right: 35%;
+    left: 35%;
+    color: #EF6C00;
+    font-size: 45px;
+    text-shadow: 0 5px 10px rgb(8 8 8 / 19%);
+    font-weight: 800;
+    text-transform: uppercase;
+    
+  
+}
+@keyframes sel{
+    from{
+        margin-right: 100%;
+        height: 100%;
+    }
+    to{
+        margin-right: 0%;
+        height: 100%;
+    }
 }
 .cards1{
     width: 70%;
@@ -334,5 +388,198 @@ footer{
 .text3-footer{
     grid-area: Ftext3;
 }
+
+@media screen and (max-width: 700px){
+body{
+    width: 84%;
+}
+.container-menu{
+    width: 100%;
+   
+    padding-right: 20%;
+   
+    
+}
+.conteudo{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+/*MENU*/
+.topnav{
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    align-items: flex-start;  
+    width: 100%;
+    padding: 0;   
+}
+nav{
+    width: 120%;
+    margin: 0;
+    padding: 0;
+}
+.topnav a{
+    color: white;
+}
+.logo{
+    width: 20%;
+    height: auto;
+}
+.menu-responsa{
+    overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+    backdrop-filter: blur(3px);
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.menu-responsa:target{
+    visibility: visible;
+    opacity: 1;
+    background-color: #0505059e;
+    width: auto;
+    margin-top: 0;
+    transition: all 0.5s;
+    padding-left: 60px;
+}
+
+
+
+
+
+.topnav a{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    
+}
+.Home{
+    float: left;
+}
+.botao-menu{
+    display: flex;
+    flex-basis: auto;
+    text-decoration: none;  
+    z-index: 20;
+    position: absolute;
+    left: 86%; 
+}
+.botao-menu:target{
+    display: none;
+    color: #232323;
+}
+.procurar{
+    margin-top: 110%;
+    height: 100%;
+    width: 90%;
+    border-radius: 30px;
+    margin-left: 10%;
+    color: black;
+    margin-right: 10%;
+    padding: 5%;
+
+}
+
+h1{
+    top: 85%;
+    font-size: 35px;
+    left: 30%;
+
+}
+
+.maps{
+
+}
+.container{
+    display: block;
+}
+
+.cards1{
+    margin-bottom: 7%;
+    width: 90%;
+    margin-top: 300%;
+    height: 640px;
+}
+.cards2{
+    margin-bottom: 7%;
+    margin-top: 5%;
+    width: 90%;
+    height: 640px;
+    
+}
+.card-grid{
+    grid-template-columns: 101%;
+    height: 370px;
+
+}
+.imagem {
+    visibility: hidden;
+
+}
+
+
+.mapa_Principal{
+}
+iframe{
+    height: 870px;
+}
+
+.maps-card{
+
+}
+.maps-card iframe{
+    height: 350px;
+}
+
+.text-descricao{
+    display: block;
+}
+
+
+.modal_container{
+    display: block;
+    width: 80%;
+
+}
+.modal_text{
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+.img-car img{
+    width: 100%;
+
+}
+.aventurar{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    margin-top: 20%;
+}
+.container-footer{
+    display: block;
+    text-align: center;
+}
+.container-footer img{
+    width: 50%;
+    margin-top: 15%;
+}
+.container-footer h4{
+    font-size: 23px;
+}
+.container-footer p{
+    font-size: 19px;
+}
+}
+
+
+
 
 

@@ -787,7 +787,9 @@ footer{
     }
 
 
-
+    .modal{
+        
+    }
     .modal_content{
         width: 30%;
     }
@@ -824,7 +826,7 @@ footer{
     footer{
         width: 100%;
         height: auto;
-        margin-top: 660%;
+        margin-top: 680%;
     }
     .container-footer{
         display: block;
